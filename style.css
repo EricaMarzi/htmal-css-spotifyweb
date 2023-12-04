@@ -43,6 +43,9 @@ ul {
 }
 
 /** Nav */
+nav {
+    color: #7d7f84;
+}
 
 .side-bar {
     width: 250px;
@@ -52,10 +55,12 @@ ul {
     padding: 20px;
 }
 
+/*? Logo */
 .logo {
     width: 150px;
 }
 
+/*? menù */
 .list-sidebar {
     margin: 30px 0;
 }
@@ -73,10 +78,46 @@ ul {
     display: flex;
     align-items: center;
     gap: 5px;
-
     color: #7d7f84;
     font-size: 14px;
     font-weight: 700;
+}
+
+/*? Playlist */
+
+.sidebar-playlist h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+
+    color: white;
+}
+
+/*! qui poi dovrai di nuovo litigare con l'overflow*/
+.playlist li {
+    margin: 15px 0;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #7d7f84;
+
+    font-size: 32px;
+    color: black;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.new-playlist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /** Main */
