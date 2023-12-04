@@ -37,7 +37,7 @@ ul {
 /** Utility */
 
 .wrapper {
-    height: calc(100vh - 100px);
+    height: 100vh; /*! c'è qualquadra che non cosa perché a caso si rompe e si rimette a posto con/senza il calc*/
     display: flex;
     flex-direction: column;
 }
