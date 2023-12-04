@@ -18,6 +18,11 @@ footer {
     background-color: #282828;
 }
 
+a {
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+}
+
 /** Utility */
 
 .wrapper {
@@ -53,7 +58,7 @@ main{
 .content-header {
     position: fixed;
     top: 0;
-    right: 20px;
+    right: 0;
     left: 0;
     height: 80px;
    
@@ -84,4 +89,20 @@ a.upgrade {
 
 .content {
     padding-top: 100px;
+}
+
+nav ul {
+    /*list-style-type: none;
+   
+    display: flex;
+    justify-content: center;*/
+    
+}
+
+li a {
+    color: #7d7f84;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+
 }
