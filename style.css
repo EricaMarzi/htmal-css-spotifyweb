@@ -57,9 +57,13 @@ h1 {
 
 main{
     flex-grow:1; 
-    overflow: auto;
+    
 
     position: relative;
+}
+
+.content {
+    overflow: auto;
 }
 
 .content-header {
@@ -118,3 +122,23 @@ li a {
 .title {
     padding: 30px 15px;
 }
+
+/*.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 10px;
+}
+
+.col {
+    padding: 0 10px;
+
+    flex-basis: calc(100% / 6);
+}
+
+.card {
+    height: 300px;
+    
+    background-color: antiquewhite;
+    border: 1px dotted rebeccapurple;
+}*/
