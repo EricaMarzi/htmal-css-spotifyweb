@@ -325,7 +325,7 @@ a.upgrade {
 }
 
 .song-title {
-    color: white;
+    color: #c1c1c1;
 }
 
 .artist {
@@ -334,11 +334,67 @@ a.upgrade {
     font-weight: 700;
 }
 
-.icon {
+.icon-left {
     margin: 0 20px;
     color: gray;
 }
 
-.icon * {
+.icon-left * {
     margin-right: 10px;
+}
+
+/*? center */
+
+
+/*? right */
+
+.volume {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-right * {
+    margin: 0 5px;
+    color: #c1c1c1;
+}
+
+.volume-bar {
+    height: 5px;
+    width: 150px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.current-volume {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 30%;
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+.marker-volume {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%); 
+
+    width: 15px;
+    height: 15px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: none;
+}
+
+.current-volume:hover .marker-volume{
+    display: block;
 }
