@@ -42,6 +42,22 @@ ul {
     flex-direction: column;
 }
 
+.container {
+    display: flex;
+    flex-grow: 1;
+    overflow: auto;
+    background-color: #141922;
+}
+
+main{
+    flex-grow:1; 
+    overflow: auto;
+    
+    position: relative;
+}
+
+
+
 /** Nav */
 nav {
     color: #7d7f84;
@@ -122,28 +138,11 @@ nav {
 
 /** Main */
 
-.container {
-    display: flex;
-    flex-grow: 1;
-    overflow: auto;
-    background-color: #141922;
-}
-
-main{
-    flex-grow:1; 
-    overflow: auto;
-    
-
-    position: relative;
-}
-
-
-
 .content-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
-    left: 250px;
+    left: 0;
     height: 80px;
    
 
@@ -172,7 +171,7 @@ a.upgrade {
 }
 
 .content {
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
 .navbar-main ul {
