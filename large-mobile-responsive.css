@@ -1,0 +1,57 @@
+/** Large mobile Responsive */
+
+@media screen and (max-width: 745px) {
+    /*? left */
+    
+    .icon-left {
+        flex-direction: column;
+        margin: 0 5px;
+    }
+
+    /*? center */
+
+    .progress-bar {
+        width: 175px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    /********TODO  Main **********/ 
+
+    .col {
+        flex-basis: 50%;
+    }
+
+
+    /********TODO Footer *********/
+
+
+    /*? left */
+    .cover {
+        height: 40px;
+        width: 40px;
+    }
+
+    .song-artist {
+        width: 70px;
+    }
+
+    .icon-left * {
+        margin-right: 0;
+    }
+    
+    /*? center */
+
+    .progress-bar {
+        width: 150px;
+    }
+
+    /*? right */
+
+    
+    .volume-bar {
+        width: 70px;
+    }
+}
