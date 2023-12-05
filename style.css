@@ -259,20 +259,17 @@ a.upgrade {
 }
 
 .col {
-    padding: 0 10px;
-
     flex-basis: calc(100% / 6);
 
+    padding: 0 10px;
     margin-bottom: 20px;
-
+    
     text-align: center;
 }
 
-/*.card {
+.card {
     height: 200px; 
-    
-    background-color: antiquewhite;
-}*/
+}
 
 .card img {
     width: 100%
@@ -476,3 +473,6 @@ a.upgrade {
 .volume-bar:hover .current-volume{
     background-color: #1ED760;
 }
+
+
+/** 768 500 375 */
