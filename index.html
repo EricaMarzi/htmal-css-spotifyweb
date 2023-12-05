@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tablet-responsive.css">
     <link rel="stylesheet" href="large-mobile-responsive.css">
+    <link rel="stylesheet" href="mobile-responsive.css">
 </head>
 
 <body>
@@ -23,8 +24,11 @@
         <div class="container">
          
             <nav class="sidebar">
-                <div class="logo">
+                <div class="logo hidden">
                     <a href="#"><img src="img/logo.svg" alt="Logo Spotify"></a>
+                </div>
+                <div class="logo-mobile">
+                    <img src="img/logo-small.svg" alt="">
                 </div>
 
                 <section class="menù">
@@ -32,25 +36,25 @@
                         <li>
                             <a href="#">
                                 <img class="icon-list" src="img/home.svg" alt="Home">
-                                <span>Home</span>
+                                <span class="hidden">Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img class="icon-list" src="img/search.svg" alt="">
-                                <span>Cerca</span>
+                                <span class="hidden">Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img class="icon-list" src="img/libreria.svg" alt="">
-                                <span>La tua libreria</span>
+                                <span class="hidden">La tua libreria</span>
                             </a>
                         </li>
                     </ul>
                 </section>
 
-                <section class="sidebar-playlist">
+                <section class="sidebar-playlist hidden">
                     <h2>Playlist</h2>
                     <ul class="playlist">
                         <li class="new-playlist">
@@ -76,13 +80,13 @@
                     <div class="install"> 
                         <a href="#">
                             <img class="download-img" src="img/download.svg" alt="Download">
-                            <span class="download">Installa app</span>
+                            <span class="download hidden">Installa app</span>
                         </a>
                     </div>
-                    <div class="divider"></div>
+                    <div class="divider hidden"></div>
                     <div class="user">
                         <div class="profile-img"></div>
-                        <span class="profile">Jhon Doe</span>
+                        <span class="profile hidden">Jhon Doe</span>
                     </div>
                 </section>
             </nav>

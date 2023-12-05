@@ -80,6 +80,10 @@ nav {
     width: 150px;
 }
 
+.logo-mobile {
+    display: none;
+}
+
 /*? menù */
 .list-sidebar {
     margin: 30px 0;
@@ -474,6 +478,3 @@ a.upgrade {
 .volume-bar:hover .current-volume{
     background-color: #1ED760;
 }
-
-
-/**  530 375 */

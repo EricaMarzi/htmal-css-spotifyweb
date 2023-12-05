@@ -1,8 +1,8 @@
-/** Large mobile Responsive */
+/** S Responsive */
 
 @media screen and (max-width: 745px) {
     /*? left */
-    
+
     .icon-left {
         flex-direction: column;
         margin: 0 5px;
@@ -17,7 +17,7 @@
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     /********TODO  Main **********/ 
 
     .col {
