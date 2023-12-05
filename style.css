@@ -297,3 +297,48 @@ a.upgrade {
 }
 
 /*******************************TODO FOOTER ******************************/
+
+.player-container {
+    display: flex;
+    justify-content: space-between; /*! DA CAMBIARE */
+    align-items: center;
+
+    height: 100%;
+}
+
+/*? left */
+.cover {
+    height: 50px;
+    width: 50px;
+}
+
+.song {
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cover img {
+    width: 100%;
+}
+
+.song-title {
+    color: white;
+}
+
+.artist {
+    color: gray;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.icon {
+    margin: 0 20px;
+    color: gray;
+}
+
+.icon * {
+    margin-right: 10px;
+}
