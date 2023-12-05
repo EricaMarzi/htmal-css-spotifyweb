@@ -1,2 +1,44 @@
-/** Tablet Responsive 768px */
+/** Tablet Responsive 900px */
 
+@media screen and (max-width: 900px) {
+
+    /********TODO  Main **********/ 
+
+    .col {
+        flex-basis: 25%;
+    }
+
+    /********TODO Footer *********/
+
+    /*? left */
+    .song-artist {
+        width: 80px;
+    }
+
+    .song-title {
+        font-size: 10px;
+    }
+    .artist {
+        font-size: 8px;
+    }
+
+    .icon-left {
+        display: flex;
+    }
+    
+    /*? center */
+
+    .progress-bar {
+        width: 250px;
+    }
+
+    /*? right */
+
+    .icon-right {
+        font-size: 14px;
+    }
+    
+    .volume-bar {
+        width: 100px;
+    }
+}    
