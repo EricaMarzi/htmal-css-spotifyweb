@@ -58,12 +58,16 @@ main{
 
 
 
-/** Nav */
+/***************************TODO NAV ******************************/
+
 nav {
     color: #7d7f84;
+    font-weight: 700;
+
+    position: relative;
 }
 
-.side-bar {
+.sidebar {
     width: 250px;
     flex-shrink: 0;
     background-color: #000000;
@@ -89,14 +93,12 @@ nav {
     width: 30px;
 }
 
-
 .list-sidebar a {
     display: flex;
     align-items: center;
     gap: 5px;
     color: #7d7f84;
     font-size: 14px;
-    font-weight: 700;
 }
 
 /*? Playlist */
@@ -104,7 +106,6 @@ nav {
 .sidebar-playlist h2 {
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 700;
 
     color: white;
 }
@@ -114,7 +115,6 @@ nav {
     margin: 15px 0;
 
     font-size: 14px;
-    font-weight: 700;
 }
 
 .box {
@@ -128,6 +128,8 @@ nav {
     line-height: 30px;
     vertical-align: middle;
     text-align: center;
+
+    cursor: pointer;
 }
 
 .new-playlist {
@@ -136,7 +138,63 @@ nav {
     gap: 10px;
 }
 
-/** Main */
+/*? Footer-sidebar */
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+}
+
+.install a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 0;
+}
+
+.download-img {
+    width: 20px;
+}
+
+.download {
+    font-size: 14px;
+    color: #7d7f84;;
+}
+
+.divider {
+    max-width: 200px;
+    border-bottom: 1px solid #7d7f84;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+
+    padding: 15px 0;
+}
+
+.profile-img {
+    display: inline-block;
+
+    width: 35px;
+    height: 35px;
+    background-color: #808080;
+    border-radius: 50%;
+
+    background-image: url(img/profile.svg);
+    background-position: center;
+}
+
+.profile {
+    color: white;
+}
+
+
+/*************************TODO MAIN ***************************/
 
 .content-header {
     position: sticky;
@@ -238,3 +296,4 @@ a.upgrade {
     border-radius: 50%;
 }
 
+/*******************************TODO FOOTER ******************************/
