@@ -345,8 +345,82 @@ a.upgrade {
 
 /*? center */
 
+.control-panel {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.control-panel *:hover {
+    text-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
+.fa-circle-play {
+    font-size: 30px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.time {
+    font-size: 10px;
+    color: white;
+}
+
+.progress-bar {
+    height: 5px;
+    width: 500px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.current-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 30%;
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+.marker {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%); 
+
+    width: 15px;
+    height: 15px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+
+    display: none;
+}
+
+.progress-bar:hover .marker{
+    display: block;
+}
+
+.progress-bar:hover .current-progress{
+    background-color: #1ED760;
+}
 
 /*? right */
+
 
 .volume {
     padding: 0 10px;
@@ -365,6 +439,7 @@ a.upgrade {
     width: 150px;
     background-color: #5a5a5a;
     border-radius: 10px;
+    cursor: pointer;
 
     position: relative;
 }
@@ -375,7 +450,7 @@ a.upgrade {
     top: 0;
 
     height: 100%;
-    width: 30%;
+    width: 60%;
     background-color: #c1c1c1;
     border-radius: 10px;
 }
@@ -390,11 +465,14 @@ a.upgrade {
     height: 15px;
     background-color: #c1c1c1;
     border-radius: 50%;
-    cursor: pointer;
 
     display: none;
 }
 
-.current-volume:hover .marker-volume{
+.volume-bar:hover .marker-volume{
     display: block;
+}
+
+.volume-bar:hover .current-volume{
+    background-color: #1ED760;
 }
