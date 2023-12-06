@@ -18,6 +18,10 @@
         width: 40px;
     }
 
+    .top-sidebar {
+        overflow: hidden;
+    }
+
     .sidebar-footer {
         display: flex;
         flex-direction: column;
