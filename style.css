@@ -121,17 +121,9 @@ nav {
     font-size: 14px;
 }
 
-.box {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: #7d7f84;
-
-    font-size: 32px;
-    color: black;
-    line-height: 30px;
-    vertical-align: middle;
-    text-align: center;
+.fa-square-plus {
+    font-size: 45px;    
+    color: #7d7f84;
 
     cursor: pointer;
 }
