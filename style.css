@@ -63,16 +63,31 @@ main{
 nav {
     color: #7d7f84;
     font-weight: 700;
-
-    position: relative;
 }
 
 .sidebar {
     width: 230px;
-    flex-shrink: 0;
     background-color: #000000;
+    padding: 20px 20px 0 20px;
+    flex-shrink: 0;
 
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-sidebar {
+    height: calc(100% - 100px);
+    flex-grow: 1;
+
+    overflow: auto;
+}
+
+.sidebar-footer {
+    height: 100px;
+
+    width: 100%;
+
+    background-color: #000000;
 }
 
 /*? Logo */
@@ -107,6 +122,8 @@ nav {
 
 /*? Playlist */
 
+/*! posizione dell'overflow da fixare*/
+
 .sidebar-playlist h2 {
     text-transform: uppercase;
     font-size: 16px;
@@ -114,7 +131,6 @@ nav {
     color: white;
 }
 
-/*! qui poi dovrai di nuovo litigare con l'overflow*/
 .playlist li {
     margin: 15px 0;
 
@@ -136,12 +152,6 @@ nav {
 
 /*? Footer-sidebar */
 
-.sidebar-footer {
-    position: absolute;
-    bottom: 0;
-
-    width: 100%;
-}
 
 .install a{
     display: flex;
@@ -169,8 +179,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px; 
-
-    padding: 15px 0;
 }
 
 .profile-img {
@@ -187,6 +195,7 @@ nav {
 
 .profile {
     color: white;
+    margin: 15px 0;
 }
 
 
