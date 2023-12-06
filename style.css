@@ -112,12 +112,20 @@ nav {
     width: 30px;
 }
 
+.icon-list.active {
+    border-left: 2px solid #1ED760;
+}
+
 .list-sidebar a {
     display: flex;
     align-items: center;
     gap: 5px;
     color: #7d7f84;
     font-size: 14px;
+}
+
+.list-sidebar a:hover {
+    color: white;
 }
 
 /*? Playlist */
@@ -133,15 +141,22 @@ nav {
 
 .playlist li {
     margin: 15px 0;
-
     font-size: 14px;
+}
+
+.playlist li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .fa-square-plus {
     font-size: 45px;    
     color: #7d7f84;
-
     cursor: pointer;
+}
+
+.fa-square-plus:hover {
+    color: white;
 }
 
 .new-playlist {
@@ -168,6 +183,10 @@ nav {
 .download {
     font-size: 14px;
     color: #7d7f84;;
+}
+
+.download:hover {
+    color: white;
 }
 
 .divider {
@@ -233,6 +252,10 @@ a.upgrade {
     right: 30px;
 }
 
+a.upgrade:hover {
+    scale: 1.1;
+}
+
 .content {
     padding-top: 10px;
 }
@@ -250,7 +273,19 @@ a.upgrade {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
+}
 
+.navbar-main a:hover {
+    color: white;
+}
+
+.navbar-main li.active::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    margin: 3px auto;
+    background-color: #1ED760;
 }
 
 .title {
@@ -273,12 +308,41 @@ a.upgrade {
     text-align: center;
 }
 
-/*.card {
-    height: 200px; 
-}*/
-
 .card img {
-    width: 100%
+    width: 100%;
+    display: block;
+}
+
+figure {
+    position: relative;
+}
+
+.play {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    color: white;
+
+    cursor: pointer;
+}
+
+.most-popoular .play {
+    border-radius: 50%;
+}
+
+figure:hover .play {
+    display: flex;
 }
 
 .album {
@@ -326,7 +390,6 @@ a.upgrade {
     gap: 10px;
 }
 
-
 .song-title {
     color: #c1c1c1;
 }
@@ -337,6 +400,11 @@ a.upgrade {
     font-weight: 700;
 }
 
+.artist:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .icon-left {
     margin: 0 20px;
     color: gray;
@@ -344,6 +412,11 @@ a.upgrade {
 
 .icon-left * {
     margin-right: 10px;
+}
+
+.icon-left *:hover {
+    color: white;
+    cursor: pointer;
 }
 
 /*? center */
@@ -357,15 +430,16 @@ a.upgrade {
     justify-content: center;
     align-items: center;
     gap: 30px;
-}
 
-.control-panel *:hover {
-    text-shadow: 0 0 10px white;
     cursor: pointer;
 }
 
-.fa-circle-play {
+.control-panel .fa-circle-play {
     font-size: 30px;
+}
+
+.fa-circle-play:hover {
+    scale: 1.1;
 }
 
 .progress {
@@ -435,6 +509,7 @@ a.upgrade {
 .icon-right * {
     margin: 0 5px;
     color: #c1c1c1;
+    cursor: pointer;
 }
 
 .volume-bar {
